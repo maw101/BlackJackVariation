@@ -7,7 +7,10 @@ public class BlackJackVariation {
 
     private Deck deck;
     private Hand playersHand;
-    private int gameScore, roundScore, round, roundLimit;
+    private int gameScore;
+    private int roundScore;
+    private int round;
+    private int roundLimit;
     private static Scanner in;
 
     /**
