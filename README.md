@@ -6,5 +6,5 @@ The player then has the option to either draw another card to try and get a roun
 If they draw another card and bust their hand (i.e. get a score over 21) they have 21 subtracted from their total score. If they do not wish to draw another card, the difference between their total and 21 is subtracted from their total score.
 The aim is to have the highest score at the end of the game consisting of several rounds.
 
-* Aces are worth 1
-* Face cards are worth 10
+*  Aces are worth 1
+*  Face cards are worth 10
