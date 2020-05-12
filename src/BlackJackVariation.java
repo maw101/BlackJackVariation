@@ -78,7 +78,7 @@ public class BlackJackVariation {
         System.out.println("\tTotalling " + roundScore);
         System.out.println("\nDo you wish to draw another card? ('Y' or 'N'):");
         choice = in.nextLine().toUpperCase();
-        if (choice.equals("Y")) {
+        if ("Y".equals(choice)) {
             draw();
             return true;
         }
