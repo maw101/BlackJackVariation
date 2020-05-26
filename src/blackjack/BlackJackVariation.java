@@ -17,14 +17,7 @@ public class BlackJackVariation {
     private int roundScore;
     private int round;
     private int roundLimit;
-    private static Scanner in;
-
-    /**
-     * Instantiates a new Black jack variation.
-     */
-    public BlackJackVariation() {
-        in = new Scanner(System.in);
-    }
+    private static final Scanner in = new Scanner(System.in);
 
     /**
      * Play game.
