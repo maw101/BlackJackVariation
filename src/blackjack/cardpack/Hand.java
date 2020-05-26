@@ -2,6 +2,7 @@ package blackjack.cardpack;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 /**
  * The type Hand - represents a hand of playing cards.
@@ -27,8 +28,7 @@ public class Hand {
      * @param card the card
      */
     public void addCard(Card card) {
-        if (card == null)
-            throw new NullPointerException("Invalid Card to Add");
+        Objects.requireNonNull(card, "Invalid Card to Add");
         hand.add(card);
     }
 
