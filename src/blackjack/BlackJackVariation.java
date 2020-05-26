@@ -83,10 +83,7 @@ public class BlackJackVariation {
     private void draw() {
         Card drawnCard = deck.dealCard();
         playersHand.addCard(drawnCard);
-        if (drawnCard.getRank() >= 10)
-            roundScore += 10;
-        else
-            roundScore += drawnCard.getRank();
+        roundScore += Math.min(drawnCard.getRank(), 10);
         System.out.println("You drew the " + drawnCard);
     }
 
