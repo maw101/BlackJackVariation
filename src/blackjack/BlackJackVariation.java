@@ -13,10 +13,7 @@ public class BlackJackVariation {
 
     private Deck deck;
     private Hand playersHand;
-    private int gameScore;
     private int roundScore;
-    private int round;
-    private int roundLimit;
     private static final Scanner in = new Scanner(System.in);
 
     /**
@@ -35,12 +32,11 @@ public class BlackJackVariation {
     public void playGame(int numberOfRounds) {
         deck = new Deck(false);
         playersHand = new Hand();
-        gameScore = 100;
-        round = 1;
-        roundLimit = numberOfRounds;
+        int gameScore = 100;
+        int round = 1;
         boolean playerWishesToContinue;
 
-        while (round <= roundLimit) {
+        while (round <= numberOfRounds) {
             System.out.println("### Round " + round + " ###");
 
             playersHand.clear();
