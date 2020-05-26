@@ -96,8 +96,8 @@ public class Card {
             case JACK:      return "Jack";
             case QUEEN:     return "Queen";
             case KING:      return "King";
+            default:		return Integer.toString(rank);
         }
-        return Integer.toString(rank);
     }
 
     /**
